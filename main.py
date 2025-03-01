@@ -1,6 +1,9 @@
 from flask import Flask, request, jsonify
 
-app = Flask(__name__):print("Registered Routes:", app.url_map)
+app = Flask(__name__)
+
+# Debugging: Print registered routes
+print("Registered Routes:", app.url_map)
 
 @app.route('/refund', methods=['POST'])
 def process_refund():
